@@ -24,4 +24,12 @@ public class Ride {
 	public int getDistance() {
 		return (Math.abs(startPosition.X - endPosition.X) + Math.abs(startPosition.Y - endPosition.Y));
 	}
+	
+	public int getLatestPickup() {
+		return endTime - getDistance();
+	}
+
+	public int getStartTime() {
+		return this.startTime;
+	}
 }
