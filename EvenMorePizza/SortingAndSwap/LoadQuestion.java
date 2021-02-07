@@ -3,11 +3,11 @@ import java.util.*;
 
 public class LoadQuestion {
 	
-	List<PizzaStructure> Pizzas;
+	List<PizzaStructure> Pizzas = new ArrayList<>();
 	int Team2;
 	int Team3;
 	int Team4;
-	Map<Integer,List<PizzaStructure>> IngreToPizza;
+	Map<Integer,List<PizzaStructure>> IngreToPizza = new HashMap<Integer,List<PizzaStructure>>();
 	
 	//Constructor
 	LoadQuestion(int Team2,int Team3,int Team4,List<PizzaStructure> Pizzas){
@@ -22,7 +22,7 @@ public class LoadQuestion {
 		{
 			for(Integer Ingredients : pizza.getHashset()) {
 				
-				List<PizzaStructure> ingredientPizza = null;
+				List<PizzaStructure> ingredientPizza = new ArrayList<PizzaStructure>();
 				if(!IngreToPizza.containsKey(Ingredients)) {
 					ingredientPizza = new ArrayList<PizzaStructure>();
 					this.IngreToPizza.put(Ingredients,ingredientPizza);
@@ -30,7 +30,7 @@ public class LoadQuestion {
 				ingredientPizza.add(pizza);
 			}
 		}
-		
+		System.out.println("Question Loaded Successfully");
 	}
 	
 	public int GetTotalIngredient() {
