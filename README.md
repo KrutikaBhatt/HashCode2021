@@ -48,11 +48,14 @@ Moreover ,The traffic light schedule determines the order and duration of green 
 intersection and repeats itself until the end of the simulation. The schedule is a list
 of pairs: incoming street and duration.
 
+
 ### Algorithm followed :
 - The time is given to us in the problem statement. And the paths followed by the cars also
 - At first,the time that would be taken to complete the street is taken. If it is larger than the time given to us, then continue
 - By keeping the track of time, we add the streets to car schedule
 - We repeat the procedure till all paths the car follows are done
+
+We have tried with Randomiation method first, and then went for a Brute force Greedy methods 
 
 ### Result :
 <img src="images/qualification_score.PNG">
