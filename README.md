@@ -27,4 +27,29 @@ Before going for the algorithm, read the <a href="EvenMorePizza/practice_round_2
 <br><br>
 
 ## Qualification Round
-### Understanding the Problem Statement :
+> This code is not the perfect and it can be optimized and bugs fixed in the future.
+
+### Understanding the Problem Statement :<br>
+Read the Problem statement <a href = "Qualification%20Round/hashcode_2021_online_qualifications.pdf">here</a><br>
+The problem consist of a city plan with planned paths for all the cars in a city. We need to optimize the scheduling of traffic lights
+| Minimize the total amount of time spent in traffic |
+| :-------------------------------------------------:|
+| Maximum number of cars should reach to end         |
+ <br>
+ 
+The city plan consists of one-way streets and intersections. Each intersection( Road Node) is identified by Integer Id
+Each Street consist of a Name,starting Node ,Ending Node and total time taken to complete the Street
+
+<img src="images/qual_prob.PNG">
+
+There is a traffic light at the end of each street. When the light is green, one car can cross the intersection
+every second. This means that if a green light for a given street lasts for Ti seconds then only the  Ti cars from that street can travel
+Moreover ,The traffic light schedule determines the order and duration of green light for the incoming streets of the
+intersection and repeats itself until the end of the simulation. The schedule is a list
+of pairs: incoming street and duration.
+
+### Algorithm followed :
+
+
+### Result :
+<img src="images/qualification_score.PNG">
